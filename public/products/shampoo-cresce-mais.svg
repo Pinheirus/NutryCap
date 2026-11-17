@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="288 178 224 524" width="224" height="524">
+  <rect x="350" y="180" width="100" height="70" rx="10" fill="#211C1D"/>
+  <path d="M290 320 q0 -70 60 -70 h100 q60 0 60 70 v350 q0 30 -30 30 h-160 q-30 0 -30 -30 z" fill="#FFD9E3"/>
+  <rect x="470" y="320" width="40" height="350" fill="#F7BFCE" opacity="0.6"/>
+  
+  <rect x="320" y="400" width="160" height="200" rx="10" fill="#FFFFFF"/>
+  <text x="400" y="472" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2" fill="#211C1D">NUTRY CAP</text>
+  <rect x="386" y="500" width="28" height="3" rx="1.5" fill="#FF5182"/>
+  <text x="400" y="556" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#211C1D" opacity="0.75">Cresce+</text>
+</svg>

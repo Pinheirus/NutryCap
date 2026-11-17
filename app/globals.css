@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Tokens de design                                                     */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  /* Cores */
+  --color-brand: #ff5182;
+  --color-white: #ffffff;
+  --color-warm-50: #faf8f9;
+  --color-warm-100: #efe9eb;
+  --color-warm-200: #e6dee0;
+  --color-warm-300: #daced1;
+  --color-warm-400: #bdadb2;
+  --color-warm-600: #8a7b80;
+  --color-warm-700: #514a4c;
+  --color-warm-800: #31292b;
+  --color-warm-900: #211c1d;
+  /* placeholder dos campos (busca) */
+  --color-placeholder: #7a6b70;
+  /* texto de apoio discreto: preço riscado, ativo do produto, "comprando avulso" */
+  --color-muted: #7a6b70;
+
+  /* Forma */
+  --radius-card: 16px;
+  /* banner e os blocos com a mesma forma (benefícios, rotina de pele, rodapé) */
+  --radius-block: 24px;
+
+  /* Movimento */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-header: 0 8px 24px -16px rgb(33 28 29 / 0.25);
+
+  --animate-cart-bump: cart-bump 400ms var(--ease-soft);
+  --animate-fade-up: fade-up 320ms var(--ease-soft) both;
+  --animate-fade-in: fade-in 240ms var(--ease-soft) both;
+  /* painel Dia/Noite da rotina de pele */
+  --animate-cloud-drift: cloud-drift 80s linear infinite alternate;
+  --animate-twinkle: twinkle 4s ease-in-out infinite;
+
+  @keyframes cart-bump {
+    0% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes cloud-drift {
+    from {
+      transform: translateX(-4%);
+    }
+    to {
+      transform: translateX(4%);
+    }
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+}
+
+/* Tipografia (Fontshare), carregada com next/font/local em app/layout.tsx.
+   font-display → Chillax (títulos) · font-body → Satoshi (corpo e interface) */
+@theme inline {
+  --font-display: var(--font-chillax), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                 */
+/* ------------------------------------------------------------------ */
+
+:root {
+  /* Margem lateral dos blocos que vão quase de ponta a ponta: banner e vitrine.
+     Uma variável só, para os dois nunca divergirem. */
+  --gutter: 12px; /* celular */
+
+  /* Padding lateral do Container (components/ui/Container.tsx);
+     também usado pelo carrossel de necessidades para sangrar até a borda no celular. */
+  --container-pad: 16px; /* celular */
+
+  /* Alturas da topbar e do header: usadas pelo Header e pelo cálculo de altura do banner */
+  --topbar-h: 36px;
+  --header-h: 64px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 24px; /* tablet e desktop */
+    --container-pad: 24px; /* tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 72px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-pad: 80px; /* desktop */
+  }
+}
+
+/* O site é sempre claro: não há tema escuro. */
+body {
+  background: #ffffff;
+  color: #211c1d;
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-warm-900);
+  outline-offset: 3px;
+}
+
+/* Sobre fundos escuros o foco fica claro */
+.on-dark :focus-visible {
+  outline-color: var(--color-white);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /*
+    Painel Dia/Noite: a regra acima também zera o crossfade do fundo, o que
+    trocaria de tema com um corte seco. Mantemos só esse crossfade em 150ms
+    (a troca "instantânea" pedida para prefers-reduced-motion, sem rotação,
+    deriva ou twinkle — essas já ficam imperceptíveis pela regra acima).
+    Mesma especificidade (!important): a seleção por classe decide.
+  */
+  .day-night-crossfade {
+    transition-duration: 150ms !important;
+  }
+}

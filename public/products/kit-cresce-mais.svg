@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 260 800 480" width="800" height="480"><ellipse cx="210" cy="706" rx="94" ry="16" fill="#211C1D" opacity="0.08"/><ellipse cx="420" cy="706" rx="94" ry="16" fill="#211C1D" opacity="0.08"/><ellipse cx="610" cy="706" rx="76" ry="16" fill="#211C1D" opacity="0.08"/>
+  <rect x="174" y="325.6" width="72" height="50.4" rx="7.199999999999999" fill="#211C1D"/>
+  <path d="M130.8 426.40000000000003 q0 -50.4 43.199999999999996 -50.4 h72 q43.199999999999996 0 43.199999999999996 50.4 v252 q0 21.599999999999998 -21.599999999999998 21.599999999999998 h-115.19999999999999 q-21.599999999999998 0 -21.599999999999998 -21.599999999999998 z" fill="#FFD9E3"/>
+  <rect x="260.4" y="426.40000000000003" width="28.799999999999997" height="252" fill="#F7BFCE" opacity="0.6"/>
+  
+  <rect x="152.4" y="484" width="115.19999999999999" height="144" rx="10" fill="#FFFFFF"/>
+  <text x="210" y="535.84" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#211C1D">NUTRY CAP</text>
+  <rect x="196" y="556" width="28" height="3" rx="1.5" fill="#FF5182"/>
+  <text x="210" y="596.32" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#211C1D" opacity="0.75">Cresce+</text>
+  <rect x="384" y="325.6" width="72" height="50.4" rx="7.199999999999999" fill="#211C1D"/>
+  <path d="M340.8 426.40000000000003 q0 -50.4 43.199999999999996 -50.4 h72 q43.199999999999996 0 43.199999999999996 50.4 v252 q0 21.599999999999998 -21.599999999999998 21.599999999999998 h-115.19999999999999 q-21.599999999999998 0 -21.599999999999998 -21.599999999999998 z" fill="#FFD9E3"/>
+  <rect x="470.4" y="426.40000000000003" width="28.799999999999997" height="252" fill="#F7BFCE" opacity="0.6"/>
+  
+  <rect x="362.4" y="484" width="115.19999999999999" height="144" rx="10" fill="#FFFFFF"/>
+  <text x="420" y="535.84" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#211C1D">NUTRY CAP</text>
+  <rect x="406" y="556" width="28" height="3" rx="1.5" fill="#FF5182"/>
+  <text x="420" y="596.32" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#211C1D" opacity="0.75">Cresce+</text>
+  <rect x="589.2" y="324" width="41.6" height="72" rx="20.8" fill="#211C1D"/>
+  <rect x="574.8" y="388" width="70.4" height="48" rx="6.4" fill="#211C1D"/>
+  <path d="M546 484 q0 -48 40 -48 h48 q40 0 40 48 v192 q0 24 -24 24 h-80 q-24 0 -24 -24 z" fill="#FFD9E3"/>
+  <rect x="648.4" y="484" width="25.6" height="192" fill="#F7BFCE" opacity="0.6"/>
+  
+  <rect x="563.6" y="516" width="92.80000000000001" height="128" rx="10" fill="#FFFFFF"/>
+  <text x="610" y="562.08" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#211C1D">NUTRY CAP</text>
+  <rect x="596" y="580" width="28" height="3" rx="1.5" fill="#FF5182"/>
+  <text x="610" y="615.84" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#211C1D" opacity="0.75">Cresce+</text>
+</svg>
